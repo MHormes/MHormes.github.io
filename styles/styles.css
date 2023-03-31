@@ -544,10 +544,12 @@ section {
 .contact-content-con {
   display: flex;
   padding-top: 3.5rem;
-  width: 50%;
+  width: 100%;
+  justify-content: center;
 }
 .contact-content-con .left-contact {
-  flex:2;
+  width: 100%;
+  /* text-align: center; */
 }
 .contact-content-con .left-contact h4 {
   margin-top: 1rem;
@@ -561,7 +563,6 @@ section {
 .contact-content-con .left-contact .contact-info .contact-item {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .contact-content-con .left-contact .contact-info .contact-item p {
   margin: 0.3rem 0 !important;
