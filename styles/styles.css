@@ -206,7 +206,6 @@ section {
 }
 .header-content .contact-icon {
   display: flex;
-
   justify-content: center;
 }
 .header-content .contact-icon a {
