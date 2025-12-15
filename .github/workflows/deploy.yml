@@ -1,0 +1,54 @@
+name: Deploy Create React App to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Trigger on every push to the main branch
+  
+  # Allows you to manually run the workflow from the Actions tab
+  workflow_dispatch:
+
+# Permissions granted to the GITHUB_TOKEN for this workflow run
+permissions:
+  contents: read
+  pages: write       # Required to publish to GitHub Pages
+  id-token: write    # Required to authenticate with GitHub's deployment system
+
+# Sets the environment for deployment
+environment:
+  name: github-pages
+  url: ${{ steps.deployment.outputs.page_url }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Use a recent LTS version
+
+      - name: Install Dependencies
+        # Use 'npm ci' for clean install in CI environments
+        run: npm ci
+
+      - name: Build React App
+        # The 'react-scripts build' command outputs static files to the 'build' folder
+        run: npm run build 
+      
+      - name: Upload Build Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # This must match the output directory of your build command
+          path: ./build # <-- CRA always builds to './build'
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
