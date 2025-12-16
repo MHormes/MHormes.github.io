@@ -5,6 +5,16 @@ on:
     branches:
       - main # Trigger on every push  to the main branch
 
+# Permissions granted to the GITHUB_TOKEN for this workflow run
+permissions:
+  contents: read
+  pages: write       # Required to publish to GitHub Pages
+  id-token: write    # Required to authenticate with GitHub's deployment system
+
+env:
+  name: github-pages
+  url: ${{ steps.deployment.outputs.page_url }}
+
 jobs:
   build:
     runs-on: ubuntu-latest
