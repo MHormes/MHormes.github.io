@@ -11,10 +11,6 @@ permissions:
   pages: write       # Required to publish to GitHub Pages
   id-token: write    # Required to authenticate with GitHub's deployment system
 
-env:
-  name: github-pages
-  url: ${{ steps.deployment.outputs.page_url }}
-
 jobs:
   build:
     runs-on: ubuntu-latest
