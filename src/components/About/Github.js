@@ -1,8 +1,25 @@
 import React from "react";
 import GitHubCalendar from "react-github-calendar";
 import { Row } from "react-bootstrap";
+import { useEffect, useState } from "react";
 
 function Github() {
+
+const [viewPortWidth, setViewPortWidth] = useState(window.innerWidth);
+
+  // Update width on resize
+  useEffect(() => {
+    const handleResize = () => setViewPortWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const isMobile = viewPortWidth < 768;
+  const blockSize = isMobile ? 25 : 30; // Smaller blocks on mobile
+  const fontSize = isMobile ? 15 : 20;  // Smaller text on mobile
+  const blockMargin = isMobile ? 6 : 10; // Smaller margin on mobile
+
+
   return (
     <Row
       style={{
@@ -16,10 +33,10 @@ function Github() {
       </h1>
       <GitHubCalendar
         username="mhormes"
-        blockSize={30}
-        blockMargin={10}
+        blockSize={blockSize}
+        blockMargin={blockMargin}
         color="#1b51e7ff"
-        fontSize={20}
+        fontSize={fontSize}
       />
     </Row>
   );

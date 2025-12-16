@@ -74,7 +74,7 @@ function Home() {
               </li>
 
              <p>
-              Or feel free to <span className="purple">contact </span>with me on
+              Or feel free to <span className="purple">contact </span>me on
             </p>
             <p>
               maarten.hormes@gmail.com
