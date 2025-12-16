@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import clipperms from "../../Assets/Projects/clipperms.png";
 import flowcontrol from "../../Assets/Projects/flowcontrol.png";
-import neuralHome from "../../Assets/Projects/neuralhome.jpg";
+import neuralHome from "../../Assets/Projects/neuralhome.png";
 import stage from "../../Assets/Projects/picture-stage.png";
 import gradReport from "../../Assets/Projects/grad_defense_pres.png";
 import gradProject from "../../Assets/Projects/grad_screenshot.png";
