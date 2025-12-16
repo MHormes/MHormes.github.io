@@ -18,18 +18,15 @@ jobs:
           node-version: '20' # Use a recent LTS version
 
       - name: Install Dependencies
-        # Use 'npm ci' for clean install in CI environments
         run: npm ci
 
       - name: Build React App
-        # The 'react-scripts build' command outputs static files to the 'build' folder
         run: npm run build 
       
       - name: Upload Build Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # This must match the output directory of your build command
-          path: ./build # <-- CRA always builds to './build'
+          path: ./build
 
   deploy:
     needs: build
