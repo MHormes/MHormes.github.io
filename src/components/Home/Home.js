@@ -8,6 +8,7 @@ import {
   AiFillGithub
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { GoDotFill  } from "react-icons/go";
 
 function Home() {
   return (
@@ -70,6 +71,16 @@ function Home() {
                   className="icon-colour  home-social-icons"
                 >
                   <FaLinkedinIn />
+                </a>
+              </li>
+               <li className="social-icons">
+                <a
+                  href="https://www.dothey.nl/devs/maarten-hormes"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <GoDotFill/>
                 </a>
               </li>
 
