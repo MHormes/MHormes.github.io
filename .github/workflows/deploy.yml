@@ -3,13 +3,12 @@ name: Deploy Portfolio
 on:
   push:
     branches:
-      - main # Trigger on every push  to the main branch
+      - main
 
-# Permissions granted to the GITHUB_TOKEN for this workflow run
 permissions:
   contents: read
-  pages: write       # Required to publish to GitHub Pages
-  id-token: write    # Required to authenticate with GitHub's deployment system
+  pages: write
+  id-token: write
 
 jobs:
   build:
@@ -18,25 +17,35 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10 # Matches your local version
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20' # Use a recent LTS version
+          node-version: '20'
+          cache: 'pnpm' # Enables automatic caching for faster builds
 
       - name: Install Dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Build React App
-        run: npm run build 
+        run: pnpm run build 
       
       - name: Upload Build Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./build
+          # VITE CHANGE: path is now 'dist', not 'build'
+          path: ./dist
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
