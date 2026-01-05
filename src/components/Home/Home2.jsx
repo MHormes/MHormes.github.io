@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/pf_new_zwart_wit.jpg";
+import myImg from "../../Assets/maarten.jpg";
 import Tilt from "react-parallax-tilt";
 
 function Home2() {
@@ -57,7 +57,12 @@ function Home2() {
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img src={myImg} className="img-fluid " alt="avatar" style={{ 
+    filter: 'grayscale(100%)', 
+    transition: 'filter 0.99s' 
+  }}
+  onMouseEnter={(e) => e.currentTarget.style.filter = 'grayscale(0%)'}
+  onMouseLeave={(e) => e.currentTarget.style.filter = 'grayscale(100%)'}/>
             </Tilt>
           </Col>
         </Row>
