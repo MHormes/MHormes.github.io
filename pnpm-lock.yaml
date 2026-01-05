@@ -11,6 +11,9 @@ importers:
       '@react-pdf/renderer':
         specifier: ^4.3.2
         version: 4.3.2(react@18.3.1)
+      '@tsparticles/react':
+        specifier: ^3.0.0
+        version: 3.0.0(@tsparticles/engine@3.9.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       axios:
         specifier: ^0.26.1
         version: 0.26.1
@@ -41,9 +44,6 @@ importers:
       react-router-dom:
         specifier: ^6.2.2
         version: 6.30.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      react-tsparticles:
-        specifier: ^1.42.2
-        version: 1.43.1(react@18.3.1)
       typewriter-effect:
         specifier: ^2.18.2
         version: 2.22.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -577,6 +577,16 @@ packages:
     engines: {node: '>=12', npm: '>=6'}
     peerDependencies:
       '@testing-library/dom': '>=7.21.4'
+
+  '@tsparticles/engine@3.9.1':
+    resolution: {integrity: sha512-DpdgAhWMZ3Eh2gyxik8FXS6BKZ8vyea+Eu5BC4epsahqTGY9V3JGGJcXC6lRJx6cPMAx1A0FaQAojPF3v6rkmQ==}
+
+  '@tsparticles/react@3.0.0':
+    resolution: {integrity: sha512-hjGEtTT1cwv6BcjL+GcVgH++KYs52bIuQGW3PWv7z3tMa8g0bd6RI/vWSLj7p//NZ3uTjEIeilYIUPBh7Jfq/Q==}
+    peerDependencies:
+      '@tsparticles/engine': ^3.0.2
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
 
   '@types/aria-query@5.0.4':
     resolution: {integrity: sha512-rfT93uj5s0PRL7EzccGMs3brplhcrghnDoV26NqKhCAS1hVo+WdNsPvE/yb6ilfr5hi2MEk6d5EWJTKdxg8jVw==}
@@ -1223,12 +1233,6 @@ packages:
       react: '>=16.6.0'
       react-dom: '>=16.6.0'
 
-  react-tsparticles@1.43.1:
-    resolution: {integrity: sha512-IWa33DP6CjcO+/upUqPhYpxduCFQvWXqCHV6rgvIPvmaqPqs8BkNbeBgBqcEPJRPzTluaD/+r9d7tDp2Uhd0uA==}
-    deprecated: '@tsparticles/react is the new version, please use that'
-    peerDependencies:
-      react: '>=16'
-
   react@18.3.1:
     resolution: {integrity: sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==}
     engines: {node: '>=0.10.0'}
@@ -1347,10 +1351,6 @@ packages:
 
   tslib@2.8.1:
     resolution: {integrity: sha512-oJFu94HQb+KVduSUQL7wnpmqnfmLsOA/nAh6b6EH0wCEoK0/mPeXU6c3wKDV83MkOuHPRHtSXKKU99IBazS/2w==}
-
-  tsparticles@1.43.1:
-    resolution: {integrity: sha512-6EuHncwqzoyTlUxc11YH8LVlwVUgpYaZD0yMOeA2OvRqFZ9VQV8EjjQ6ZfXt6pfGA1ObPwU929jveFatxwTQkg==}
-    deprecated: tsParticles v3 is out, it contains breaking changes and it's recommended to migrate to that version with fixes and new features
 
   typewriter-effect@2.22.0:
     resolution: {integrity: sha512-01HCRYY462wT8Fxps/epwGCioZd/GMXY0aLKhFKrfJ5Xhgf54/SiDx7Oq7PoES5kGqOEAdW8FS8HYVM2WSvfhQ==}
@@ -1937,6 +1937,14 @@ snapshots:
   '@testing-library/user-event@14.6.1(@testing-library/dom@10.4.1)':
     dependencies:
       '@testing-library/dom': 10.4.1
+
+  '@tsparticles/engine@3.9.1': {}
+
+  '@tsparticles/react@3.0.0(@tsparticles/engine@3.9.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+    dependencies:
+      '@tsparticles/engine': 3.9.1
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
   '@types/aria-query@5.0.4': {}
 
@@ -2578,12 +2586,6 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  react-tsparticles@1.43.1(react@18.3.1):
-    dependencies:
-      fast-deep-equal: 3.1.3
-      react: 18.3.1
-      tsparticles: 1.43.1
-
   react@18.3.1:
     dependencies:
       loose-envify: 1.4.0
@@ -2718,8 +2720,6 @@ snapshots:
       picomatch: 4.0.3
 
   tslib@2.8.1: {}
-
-  tsparticles@1.43.1: {}
 
   typewriter-effect@2.22.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
