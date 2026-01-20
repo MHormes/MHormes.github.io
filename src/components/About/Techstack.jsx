@@ -24,7 +24,7 @@ import Laravel from "../../Assets/TechIcons/Laravel.svg";
 import Arduino from "../../Assets/TechIcons/Arduino.svg";
 import Vite from "../../Assets/TechIcons/Vite.js.svg";
 import Cypress from "../../Assets/TechIcons/Cypress.svg";
-import Nuxt from "../../Assets/TechIcons/Nuxt.js.svg";
+import Nuxt from "../../Assets/TechIcons/Nuxt JS.svg";
 
 function Techstack() {
   return (
