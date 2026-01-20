@@ -31,8 +31,8 @@ function Projects() {
             <ProjectCard
               imgPath={clipperms}
               title="ClipperMS"
-              description="Java (Spring) & React.js web application created as a free time side project. A system for managing a collection of collectable Clipper lighters"
-              ghLink="https://github.com/MHormes/Clipper-MS"
+              description="PHP Laravel & Vue.js web application created as a free time side project. A system for managing a collection of collectable Clipper lighters"
+              demoLink="https://clipper-ms.com"
             />
           </Col>
 

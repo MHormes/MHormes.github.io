@@ -20,6 +20,10 @@ import VueIcon from "../../Assets/TechIcons/Vue.js.svg";
 import MongoDB from "../../Assets/TechIcons/Mongo.svg";
 import MSSQL from "../../Assets/TechIcons/Microsoft SQL Server.svg";
 import Cplusplus from "../../Assets/TechIcons/CPlusPlus.svg";
+import Laravel from "../../Assets/TechIcons/Laravel.svg";
+import Arduino from "../../Assets/TechIcons/Arduino.svg";
+import Vite from "../../Assets/TechIcons/Vite.js.svg";
+import Cypress from "../../Assets/TechIcons/Cypress.svg";
 
 function Techstack() {
   return (
@@ -28,7 +32,7 @@ function Techstack() {
         <img src={Csharp} alt="C#" className="tech-icon-images" />
         <div className="tech-icons-text">C#</div>
       </Col>
-       <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="tech-icons">
         <img src={Cplusplus} alt="C++" className="tech-icon-images" />
         <div className="tech-icons-text">C++</div>
       </Col>
@@ -41,16 +45,20 @@ function Techstack() {
         <div className="tech-icons-text">Spring</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
+        <img src={Laravel} alt="Laravel" className="tech-icon-images" />
+        <div className="tech-icons-text">Laravel</div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
         <img src={Python} alt="Python" className="tech-icon-images" />
         <div className="tech-icons-text">Python</div>
       </Col>
- 
+
       <Col xs={4} md={2} className="tech-icons">
         <img src={Node} alt="node" className="tech-icon-images" />
         <div className="tech-icons-text">Node.Js</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <img src={Javascript} alt="javascript"  className="tech-icon-images"/>
+        <img src={Javascript} alt="javascript" className="tech-icon-images" />
         <div className="tech-icons-text">Javascript</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
@@ -65,6 +73,25 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <img src={VueIcon} alt="vue" className="tech-icon-images" />
         <div className="tech-icons-text">Vue.Js</div>
+      </Col>
+
+      <Col xs={4} md={2} className="tech-icons">
+        <img src={Vite} alt="Vite.js" className="tech-icon-images" />
+        <div className="tech-icons-text">Vite.js</div>
+      </Col>
+
+      <Col xs={4} md={2} className="tech-icons">
+        <img src={Tailwind} alt="tailwind" className="tech-icon-images" />
+        <div className="tech-icons-text">Tailwind CSS</div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <img src={DUI} alt="daisyui" className="tech-icon-images" />
+        <div className="tech-icons-text">Daisy UI</div>
+      </Col>
+
+      <Col xs={4} md={2} className="tech-icons">
+        <img src={Cypress} alt="cypress" className="tech-icon-images" />
+        <div className="tech-icons-text">Cypress</div>
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
@@ -93,24 +120,18 @@ function Techstack() {
         <div className="tech-icons-text">MSSQL</div>
       </Col>
 
-       <Col xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="tech-icons">
         <img src={Kafka} alt="Kafka" className="tech-icon-images" />
         <div className="tech-icons-text">Kafka</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <img src={Redis} alt="redis"className="tech-icon-images" />
+        <img src={Redis} alt="redis" className="tech-icon-images" />
         <div className="tech-icons-text">Redis</div>
       </Col>
 
-
       <Col xs={4} md={2} className="tech-icons">
-        <img src={Tailwind} alt="tailwind" className="tech-icon-images" />
-        <div className="tech-icons-text">Tailwind CSS</div>
-      </Col>
-
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={DUI} alt="daisyui" className="tech-icon-images" />
-        <div className="tech-icons-text">Daisy UI</div>
+        <img src={Arduino} alt="arduino" className="tech-icon-images" />
+        <div className="tech-icons-text">Arduino</div>
       </Col>
     </Row>
   );
