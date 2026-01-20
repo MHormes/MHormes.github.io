@@ -24,6 +24,7 @@ import Laravel from "../../Assets/TechIcons/Laravel.svg";
 import Arduino from "../../Assets/TechIcons/Arduino.svg";
 import Vite from "../../Assets/TechIcons/Vite.js.svg";
 import Cypress from "../../Assets/TechIcons/Cypress.svg";
+import Nuxt from "../../Assets/TechIcons/Nuxt.js.svg";
 
 function Techstack() {
   return (
@@ -73,6 +74,10 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <img src={VueIcon} alt="vue" className="tech-icon-images" />
         <div className="tech-icons-text">Vue.Js</div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <img src={Nuxt} alt="nuxt" className="tech-icon-images" />
+        <div className="tech-icons-text">Nuxt.Js</div>
       </Col>
 
       <Col xs={4} md={2} className="tech-icons">
