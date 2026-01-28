@@ -29,10 +29,7 @@ function Home2() {
               <br />
               Besides that I have experiences with
               <i>
-                <b className="purple">
-                  {" "}
-                  Python, C#, SQL, Web Security{" "}
-                </b>
+                <b className="purple"> Python, C#, SQL, Web Security </b>
               </i>
               and lots of tools and frameworks.
               <br />
@@ -41,14 +38,15 @@ function Home2() {
               <i>
                 <b className="purple">
                   {" "}
-                  Web Applications, IOT/Smart Home systems,{" "}
+                  Web Applications, IOT/Smart Home systems and Obsidian
+                  plugins.{" "}
                 </b>
               </i>
-              and Obsidian plugins.
               <br />
               <br />
               Whenever possible, I love building projects with
-              <b className="purple"> Springboot </b> and modern JavaScript frameworks like{" "}
+              <b className="purple"> Springboot </b> and modern JavaScript
+              frameworks like{" "}
               <i>
                 <b className="purple">React.js</b> and{" "}
                 <b className="purple">Vue.js</b>.
@@ -57,12 +55,21 @@ function Home2() {
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid " alt="avatar" style={{ 
-    filter: 'grayscale(100%)', 
-    transition: 'filter 0.99s' 
-  }}
-  onMouseEnter={(e) => e.currentTarget.style.filter = 'grayscale(0%)'}
-  onMouseLeave={(e) => e.currentTarget.style.filter = 'grayscale(100%)'}/>
+              <img
+                src={myImg}
+                className="img-fluid "
+                alt="avatar"
+                style={{
+                  filter: "grayscale(100%)",
+                  transition: "filter 0.99s",
+                }}
+                onMouseEnter={(e) =>
+                  (e.currentTarget.style.filter = "grayscale(0%)")
+                }
+                onMouseLeave={(e) =>
+                  (e.currentTarget.style.filter = "grayscale(100%)")
+                }
+              />
             </Tilt>
           </Col>
         </Row>
