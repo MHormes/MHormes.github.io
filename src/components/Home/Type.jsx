@@ -10,7 +10,7 @@ function Type() {
           "Full Stack Developer",
           "Smart Home Enthusiast",
           "Nature lover",
-          "Football fan",
+          "Football player",
         ],
         autoStart: true,
         loop: true,

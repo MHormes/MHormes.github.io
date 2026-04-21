@@ -14,6 +14,7 @@ import clippermicro from "../../Assets/Projects/kub-architec.png";
 import zenya from "../../Assets/Projects/zenya-ss.png";
 import mediabazaar from "../../Assets/Projects/mediabazaar.png";
 import smokeit from "../../Assets/Projects/smokeit.png";
+import sidetrack from "../../Assets/Projects/sidetrack.png";
 
 function Projects() {
   return (
@@ -29,6 +30,15 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={sidetrack}
+              title="Sidetrack"
+              description="Next.js informativewebsite and webshop for Sidetrack, a cover band based in the Netherlands. Built as a free time project."
+              demoLink="https://www.sidetracksounds.nl"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={clipperms}
               title="ClipperMS"
               description="PHP Laravel & Vue.js web application created as a free time side project. A system for managing a collection of collectable Clipper lighters"
@@ -41,7 +51,6 @@ function Projects() {
               imgPath={flowcontrol}
               title="Flowcontrol"
               description="A Java (spring) & Vue.js web application I have been working on at Limax B.V. This application is intended to digitalize the business process of Limax. Private repository. Contact me to gain viewing access"
-              ghLink="https://github.com/rikp777/Flowcontrol"
               demoLink="https://flowcontrol.limax.nl"
             />
           </Col>
@@ -72,7 +81,6 @@ function Projects() {
               ghLink="https://github.com/MHormes/Clipper-MS-Microservices"
             />
           </Col>
-
 
           <Col md={4} className="project-card">
             <ProjectCard
@@ -110,7 +118,6 @@ function Projects() {
             />
           </Col>
 
-
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={mediabazaar}
@@ -119,7 +126,6 @@ function Projects() {
               ghLink="https://github.com/MHormes/S2CB-LAMN-software"
             />
           </Col>
-
         </Row>
       </Container>
     </Container>

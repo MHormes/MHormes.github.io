@@ -10,28 +10,61 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
             Hello there. I’m <span className="purple">Maarten Hormes</span> from{" "}
             <span className="purple">Roermond, Netherlands</span>.
-            <br />
-            I’m currently working as a{" "}
-            <span className="purple">Full-stack Software Engineer</span> at{" "}
-            <span className="purple">Limax B.V.</span>
-            <br />
-            Here I develop software for our in-house ERP:{" "}
-            <span className="purple">Flowcontrol.</span>
-            <br />
-            I'm also part of the tech company{" "}
-            <span className="purple">.Hey</span>
-            <br />
-            And sole developer and maintainer of{" "}
-            <span className="purple">Clipper-MS.com</span>
-            <br />
-            <br />
-            Outside of coding, I have a few interests that keep my creative side
-            busy:
           </p>
 
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Writing and playing music 🎵
+              <ImPointRight /> Full-stack Software Engineer at Limax B.V. —
+              building{" "}
+              <a
+                href="https://flowcontrol.limax.nl"
+                target="_blank"
+                rel="noreferrer"
+                className="purple"
+              >
+                Flowcontrol
+              </a>
+            </li>
+            <li className="about-activity">
+              <ImPointRight /> Part of tech company{" "}
+              <a
+                href="https://www.dothey.nl"
+                target="_blank"
+                rel="noreferrer"
+                className="purple"
+              >
+                .Hey
+              </a>
+            </li>
+            <li className="about-activity">
+              <ImPointRight /> Sole developer of{" "}
+              <a
+                href="https://clipper-ms.com"
+                target="_blank"
+                rel="noreferrer"
+                className="purple"
+              >
+                Clipper-MS.com
+              </a>
+            </li>
+          </ul>
+
+          <p style={{ textAlign: "justify" }}>
+            Outside of coding, I keep myself busy with:
+          </p>
+
+          <ul>
+            <li className="about-activity">
+              <ImPointRight /> Writing and playing music in{" "}
+              <a
+                href="https://sidetracksounds.nl"
+                target="_blank"
+                rel="noreferrer"
+                className="purple"
+              >
+                Sidetrack
+              </a>{" "}
+              🎵
             </li>
             <li className="about-activity">
               <ImPointRight /> Designing and printing 3D models 🎨

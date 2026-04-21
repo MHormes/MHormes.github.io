@@ -13,44 +13,57 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I’m a Software Engineer who loves transforming ideas into
-              reliable, scalable products. I like to get things done, properly!
+              I’m a Full-Stack Software Engineer who loves transforming ideas into
+              reliable, scalable products — from server setup to frontend design.
+              I like to get things done, properly!
               <br />
               <br />
-              I’m proficient in
+              At work I mostly build web apps using
               <i>
-                <b className="purple">
-                  {" "}
-                  JavaScript, TypeScript and Java (Springboot){" "}
-                </b>
+                <b className="purple"> JavaScript/TypeScript frameworks </b>
               </i>
-              — and I enjoy working on full-stack projects.
-              <br />
-              <br />
-              Besides that I have experiences with
+              and
               <i>
-                <b className="purple"> Python, C#, SQL, Web Security </b>
+                <b className="purple"> Java (Spring Boot)</b>
               </i>
-              and lots of tools and frameworks.
+              .
               <br />
               <br />
-              My key areas of interest include developing
+              I also have experience with
               <i>
-                <b className="purple">
-                  {" "}
-                  Web Applications, IOT/Smart Home systems and Obsidian
-                  plugins.{" "}
-                </b>
+                <b className="purple"> Python, C#, PHP</b>
               </i>
-              <br />
-              <br />
-              Whenever possible, I love building projects with
-              <b className="purple"> Springboot </b> and modern JavaScript
-              frameworks like{" "}
+              {" "}and{" "}
               <i>
-                <b className="purple">React.js</b> and{" "}
-                <b className="purple">Vue.js</b>.
+                <b className="purple">SQL</b>
               </i>
+              , along with lots of tools and frameworks.
+              <br />
+              <br />
+              I have an interest in
+              <i>
+                <b className="purple"> Web Security</b>
+              </i>
+              {" "}and{" "}
+              <i>
+                <b className="purple">Server &amp; VM Management</b>
+              </i>
+              {" "}— I run a home lab with Proxmox for self-hosting.
+              <br />
+              <br />
+              I like building things — from
+              <i>
+                <b className="purple"> Web Applications</b>
+              </i>
+              {" "}and{" "}
+              <i>
+                <b className="purple">Obsidian plugins</b>
+              </i>
+              {" "}to{" "}
+              <i>
+                <b className="purple">IoT/Smart Home</b>
+              </i>
+              {" "}setups on my home server.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
