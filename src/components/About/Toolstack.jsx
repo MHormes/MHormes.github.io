@@ -11,6 +11,8 @@ import datagrip from "../../Assets/TechIcons/DataGrip.svg";
 import DigitalOcean from "../../Assets/TechIcons/Digital Ocean.svg";
 import Vercel from "../../Assets/TechIcons/Vercel.svg";
 import Cloudflare from "../../Assets/TechIcons/Cloudflare.svg";
+import Proxmox from "../../Assets/TechIcons/proxmox.svg";
+import HomeAssistant from "../../Assets/TechIcons/homeassistant.svg";
 
 function Toolstack() {
   return (
@@ -92,6 +94,14 @@ function Toolstack() {
       <Col xs={4} md={2} className="tech-icons">
         <img src={Obsidian} alt="Obsidian" className="tech-icon-images" />
         <div className="tech-icons-text">Obsidian</div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <img src={Proxmox} alt="Proxmox" className="tech-icon-images" />
+        <div className="tech-icons-text">Proxmox</div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <img src={HomeAssistant} alt="Home Assistant" className="tech-icon-images" />
+        <div className="tech-icons-text">Home Assistant</div>
       </Col>
     </Row>
   );

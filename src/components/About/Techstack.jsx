@@ -25,6 +25,11 @@ import Arduino from "../../Assets/TechIcons/Arduino.svg";
 import Vite from "../../Assets/TechIcons/Vite.js.svg";
 import Cypress from "../../Assets/TechIcons/Cypress.svg";
 import Nuxt from "../../Assets/TechIcons/Nuxt JS.svg";
+import Keycloak from "../../Assets/TechIcons/keycloak.svg";
+import Sonarqube from "../../Assets/TechIcons/sonarqubeserver.svg";
+import Cloudinary from "../../Assets/TechIcons/cloudinary.svg";
+import MinIO from "../../Assets/TechIcons/minio.svg";
+import SQLite from "../../Assets/TechIcons/sqlite.svg";
 
 function Techstack() {
   return (
@@ -137,6 +142,27 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <img src={Arduino} alt="arduino" className="tech-icon-images" />
         <div className="tech-icons-text">Arduino</div>
+      </Col>
+
+      <Col xs={4} md={2} className="tech-icons">
+        <img src={Keycloak} alt="Keycloak" className="tech-icon-images" />
+        <div className="tech-icons-text">Keycloak</div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <img src={Sonarqube} alt="Sonarqube" className="tech-icon-images" />
+        <div className="tech-icons-text">Sonarqube</div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <img src={Cloudinary} alt="Cloudinary" className="tech-icon-images" />
+        <div className="tech-icons-text">Cloudinary</div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <img src={MinIO} alt="MinIO" className="tech-icon-images" />
+        <div className="tech-icons-text">MinIO</div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <img src={SQLite} alt="SQLite" className="tech-icon-images" />
+        <div className="tech-icons-text">SQLite</div>
       </Col>
     </Row>
   );
