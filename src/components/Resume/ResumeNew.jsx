@@ -26,15 +26,15 @@ function ResumeNew() {
           </Document>
         </Row>
 
-        <Row style={{ justifyContent: "center", position: "relative" }}>
+        <Row className="resume-actions">
           <Button
             variant="primary"
             href={pdf}
             target="_blank"
-            style={{ maxWidth: "250px" }}
+            className="resume-download"
           >
             <AiOutlineDownload />
-            &nbsp;Download CV
+            Download CV
           </Button>
         </Row>
       </Container>

@@ -4,11 +4,9 @@ import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
-import {
-  AiFillGithub
-} from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import { GoDotFill  } from "react-icons/go";
+import { GoDotFill } from "react-icons/go";
 
 function Home() {
   return (
@@ -16,32 +14,22 @@ function Home() {
       <Container fluid className="home-section" id="home">
         <Particle />
         <Container className="home-content">
-          <Row>
+          <Row className="align-items-center">
             <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There!{" "}
-                <span className="wave" role="img" aria-labelledby="wave">
-                  👋🏻
-                </span>
-              </h1>
+              <h1 className="heading">Hi there.</h1>
 
               <h1 className="heading-name">
-                I'M
-                <strong className="main-name"> MAARTEN HORMES</strong>
+                I&apos;m
+                <strong className="main-name"> Maarten Hormes</strong>
               </h1>
 
-              <div style={{ padding: 50, textAlign: "left" }}>
+              <div className="typewriter-wrap">
                 <Type />
               </div>
             </Col>
 
-            <Col md={5} style={{ paddingBottom: 20 }}>
-              <img
-                src={homeLogo}
-                alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "450px" }}
-              />
+            <Col md={5} className="hero-visual">
+              <img src={homeLogo} alt="home pic" className="img-fluid" />
             </Col>
           </Row>
         </Container>
@@ -49,7 +37,7 @@ function Home() {
       <Home2 />
 
       <Container>
-        <Row style={{ paddingTop: "50px", paddingBottom: "80px" }}>
+        <Row className="social-row">
           <Col md={12} className="home-about-social">
             <h1>Find Me On</h1>
             <ul className="home-about-social-links">
@@ -58,7 +46,8 @@ function Home() {
                   href="https://github.com/mhormes"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
+                  aria-label="GitHub"
                 >
                   <AiFillGithub />
                 </a>
@@ -68,29 +57,29 @@ function Home() {
                   href="https://www.linkedin.com/in/maarten-hormes/"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
+                  aria-label="LinkedIn"
                 >
                   <FaLinkedinIn />
                 </a>
               </li>
-               <li className="social-icons">
+              <li className="social-icons">
                 <a
                   href="https://www.dothey.nl/devs/maarten-hormes"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
+                  aria-label=".Hey profile"
                 >
-                  <GoDotFill/>
+                  <GoDotFill />
                 </a>
               </li>
-
-             <p>
-              Or feel free to <span className="purple">contact </span>me on
-            </p>
-            <p>
-              maarten.hormes@gmail.com
-            </p>
-
+              <li className="contact-block">
+                <p>
+                  Or feel free to <span className="purple">contact </span>me on
+                </p>
+                <p>maarten.hormes@gmail.com</p>
+              </li>
             </ul>
           </Col>
         </Row>

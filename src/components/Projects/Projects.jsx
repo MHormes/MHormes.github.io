@@ -24,10 +24,10 @@ function Projects() {
         <h1 className="project-heading">
           My <strong className="purple">Work </strong>
         </h1>
-        <p style={{ color: "white" }}>
+        <p className="project-intro">
           Here is some of the work that I've done.
         </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Row className="projects-grid">
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={sidetrack}

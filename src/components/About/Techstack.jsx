@@ -33,7 +33,7 @@ import SQLite from "../../Assets/TechIcons/sqlite.svg";
 
 function Techstack() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+    <Row className="tech-grid">
       <Col xs={4} md={2} className="tech-icons">
         <img src={Csharp} alt="C#" className="tech-icon-images" />
         <div className="tech-icons-text">C#</div>

@@ -4,10 +4,8 @@ import { Row } from "react-bootstrap";
 import { useEffect, useState } from "react";
 
 function Github() {
+  const [viewPortWidth, setViewPortWidth] = useState(window.innerWidth);
 
-const [viewPortWidth, setViewPortWidth] = useState(window.innerWidth);
-
-  // Update width on resize
   useEffect(() => {
     const handleResize = () => setViewPortWidth(window.innerWidth);
     window.addEventListener("resize", handleResize);
@@ -15,27 +13,20 @@ const [viewPortWidth, setViewPortWidth] = useState(window.innerWidth);
   }, []);
 
   const isMobile = viewPortWidth < 768;
-  const blockSize = isMobile ? 25 : 30; // Smaller blocks on mobile
-  const fontSize = isMobile ? 15 : 20;  // Smaller text on mobile
-  const blockMargin = isMobile ? 6 : 10; // Smaller margin on mobile
-
+  const blockSize = isMobile ? 16 : 18;
+  const fontSize = isMobile ? 11 : 12;
+  const blockMargin = isMobile ? 4 : 5;
 
   return (
-    <Row
-      style={{
-        justifyContent: "center",
-        paddingBottom: "10px",
-        color: "white",
-      }}
-    >
-      <h1 className="project-heading pb-4" style={{ paddingBottom: "20px" }}>
+    <Row className="github-row">
+      <h1 className="project-heading pb-4">
         Days I <strong className="purple">Code</strong>
       </h1>
       <GitHubCalendar
         username="mhormes"
         blockSize={blockSize}
         blockMargin={blockMargin}
-        color="#1b51e7ff"
+        color="#6c7cff"
         fontSize={fontSize}
       />
     </Row>
