@@ -15,6 +15,7 @@ import zenya from "../../Assets/Projects/zenya-ss.png";
 import mediabazaar from "../../Assets/Projects/mediabazaar.png";
 import smokeit from "../../Assets/Projects/smokeit.png";
 import sidetrack from "../../Assets/Projects/sidetrack.png";
+import p2p from "../../Assets/Projects/p2p_image.png";
 
 function Projects() {
   return (
@@ -30,9 +31,17 @@ function Projects() {
         <Row className="projects-grid">
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={p2p}
+              title="Print2Play"
+              description="Next.js D&D character builder, built to optimize and simplify printing character sheets for in person play."
+              demoLink="https://printer.clipper-ms.com"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={sidetrack}
-              title="Sidetrack"
-              description="Next.js informativewebsite and webshop for Sidetrack, a cover band based in the Netherlands. Built as a free time project."
+              title="SideTrack"
+              description="Next.js informative website and webshop for SideTrack, a cover band based in the Netherlands. Built as a free time project."
               demoLink="https://www.sidetracksounds.nl"
             />
           </Col>
@@ -59,7 +68,7 @@ function Projects() {
             <ProjectCard
               imgPath={gradProject}
               title="Quad Solutions"
-              description="Links to the FE repository for my graduation assignment. This web application is integrated with Yoobi and provides analysis and projections on booked hours"
+              description="Link to the FE repository for my graduation assignment. This web application is integrated with Yoobi and provides analysis and projections on booked hours"
               ghLink="https://github.com/MHormes/graduation-fe"
             />
           </Col>
@@ -73,14 +82,14 @@ function Projects() {
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={clippermicro}
               title="ClipperMS - Microservices"
               description="Java (Spring) & React.js web application created as as school project. Java (Spring) & React.js web application created as as school project"
               ghLink="https://github.com/MHormes/Clipper-MS-Microservices"
             />
-          </Col>
+          </Col> */}
 
           <Col md={4} className="project-card">
             <ProjectCard

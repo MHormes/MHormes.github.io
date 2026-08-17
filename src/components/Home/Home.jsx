@@ -6,7 +6,6 @@ import Home2 from "./Home2";
 import Type from "./Type";
 import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import { GoDotFill } from "react-icons/go";
 
 function Home() {
   return (
@@ -61,17 +60,6 @@ function Home() {
                   aria-label="LinkedIn"
                 >
                   <FaLinkedinIn />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.dothey.nl/devs/maarten-hormes"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                  aria-label=".Hey profile"
-                >
-                  <GoDotFill />
                 </a>
               </li>
               <li className="contact-block">

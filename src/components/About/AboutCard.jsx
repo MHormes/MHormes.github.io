@@ -15,17 +15,7 @@ function AboutCard() {
           <ul>
             <li className="about-activity">
               <ImPointRight />
-              <span>
-                Full-stack Software Engineer at Limax B.V., building{" "}
-                <a
-                  href="https://flowcontrol.limax.nl"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="purple"
-                >
-                  Flowcontrol
-                </a>
-              </span>
+              <span>Connectables Engineer at AZL</span>
             </li>
             <li className="about-activity">
               <ImPointRight />
@@ -50,6 +40,10 @@ function AboutCard() {
                 </a>
               </span>
             </li>
+            <li className="about-activity">
+              <ImPointRight />
+              <span>Running a home lab with Proxmox and TrueNAS</span>
+            </li>
           </ul>
 
           <p>Outside of coding, I keep myself busy with:</p>
@@ -65,13 +59,23 @@ function AboutCard() {
                   rel="noreferrer"
                   className="purple"
                 >
-                  Sidetrack
+                  SideTrack
                 </a>
               </span>
             </li>
             <li className="about-activity">
               <ImPointRight />
-              <span>Designing and printing 3D models</span>
+              <span>
+                Playing football at{" "}
+                <a
+                  href="https://vvhebes.nl"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="purple"
+                >
+                  VV Hebes
+                </a>
+              </span>
             </li>
             <li className="about-activity">
               <ImPointRight />

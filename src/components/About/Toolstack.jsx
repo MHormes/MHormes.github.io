@@ -13,6 +13,7 @@ import Vercel from "../../Assets/TechIcons/Vercel.svg";
 import Cloudflare from "../../Assets/TechIcons/Cloudflare.svg";
 import Proxmox from "../../Assets/TechIcons/proxmox.svg";
 import HomeAssistant from "../../Assets/TechIcons/homeassistant.svg";
+import TrueNAS from "../../Assets/TechIcons/TrueNAS.svg";
 
 function Toolstack() {
   return (
@@ -100,8 +101,16 @@ function Toolstack() {
         <div className="tech-icons-text">Proxmox</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <img src={HomeAssistant} alt="Home Assistant" className="tech-icon-images" />
+        <img
+          src={HomeAssistant}
+          alt="Home Assistant"
+          className="tech-icon-images"
+        />
         <div className="tech-icons-text">Home Assistant</div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <img src={TrueNAS} alt="TrueNAS" className="tech-icon-images" />
+        <div className="tech-icons-text">TrueNAS</div>
       </Col>
     </Row>
   );

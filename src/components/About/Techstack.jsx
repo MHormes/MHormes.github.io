@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import Spring from "../../Assets/TechIcons/Spring.svg";
+import Kotlin from "../../Assets/TechIcons/Kotlin.svg";
 import Javascript from "../../Assets/TechIcons/Javascript.svg";
 import Node from "../../Assets/TechIcons/Node.svg";
 import ReactIcon from "../../Assets/TechIcons/React.svg";
@@ -11,7 +12,7 @@ import Git from "../../Assets/TechIcons/Git.svg";
 import Redis from "../../Assets/TechIcons/Redis.svg";
 import Docker from "../../Assets/TechIcons/Docker.svg";
 import SQL from "../../Assets/TechIcons/SQL.svg";
-import Kubernates from "../../Assets/TechIcons/Kubernates.svg";
+import Kubernetes from "../../Assets/TechIcons/Kubernetes.svg";
 import Tailwind from "../../Assets/TechIcons/Tailwind.svg";
 import DUI from "../../Assets/TechIcons/Daisy.svg";
 import Csharp from "../../Assets/TechIcons/CSharp.svg";
@@ -27,7 +28,6 @@ import Cypress from "../../Assets/TechIcons/Cypress.svg";
 import Nuxt from "../../Assets/TechIcons/Nuxt JS.svg";
 import Keycloak from "../../Assets/TechIcons/keycloak.svg";
 import Sonarqube from "../../Assets/TechIcons/sonarqubeserver.svg";
-import Cloudinary from "../../Assets/TechIcons/cloudinary.svg";
 import MinIO from "../../Assets/TechIcons/minio.svg";
 import SQLite from "../../Assets/TechIcons/sqlite.svg";
 
@@ -45,6 +45,10 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <img src={Java} alt="Java" className="tech-icon-images" />
         <div className="tech-icons-text">Java</div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <img src={Kotlin} alt="Kotlin" className="tech-icon-images" />
+        <div className="tech-icons-text">Kotlin</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <img src={Spring} alt="Spring" className="tech-icon-images" />
@@ -113,7 +117,7 @@ function Techstack() {
         <div className="tech-icons-text">Docker</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <img src={Kubernates} alt="kubernetes" className="tech-icon-images" />
+        <img src={Kubernetes} alt="kubernetes" className="tech-icon-images" />
         <div className="tech-icons-text">Kubernetes</div>
       </Col>
 
@@ -151,10 +155,6 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <img src={Sonarqube} alt="Sonarqube" className="tech-icon-images" />
         <div className="tech-icons-text">Sonarqube</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Cloudinary} alt="Cloudinary" className="tech-icon-images" />
-        <div className="tech-icons-text">Cloudinary</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <img src={MinIO} alt="MinIO" className="tech-icon-images" />
