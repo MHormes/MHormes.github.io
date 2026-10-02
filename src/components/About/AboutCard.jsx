@@ -15,7 +15,7 @@ function AboutCard() {
           <ul>
             <li className="about-activity">
               <ImPointRight />
-              <span>Connectables Engineer at AZL</span>
+              <span>Software Engineer at AZL (Kotlin, Java)</span>
             </li>
             <li className="about-activity">
               <ImPointRight />
