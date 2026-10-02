@@ -15,7 +15,10 @@ function AboutCard() {
           <ul>
             <li className="about-activity">
               <ImPointRight />
-              <span>Software Engineer at AZL (Kotlin, Java)</span>
+              <span>
+                Software Engineer at AZL - Developing Kotlin applications to
+                support the WTP transition at AZL
+              </span>
             </li>
             <li className="about-activity">
               <ImPointRight />
